@@ -5,7 +5,7 @@ Don't judge the code, this is not the best way to write code. I was learning tki
 Here's the Mega link for Downloading exe file
 https://mega.nz/file/fwkSlYoS#YDzpb-gXS_qswL5H2o5ZJirei6oqu-dTpKI1oL2F2sw
 
-**How to USE: **
+**How to USE:**
 
 1. Download .exe file and run it.
 2. Select any excel file. It should have **NAME** column in it (case sensitive)
