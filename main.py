@@ -18,18 +18,29 @@ Attandees = []
 
 def checkAttandance():
     present = []
+    p1 = 0
     for index, row in Names.iterrows():
         yes = False
         name = row['NAME']
         name = name.lower()
         for i in Attandees:
             if i in name or name in i:
+                p1 += 1
                 present.append("P")
                 yes = True
                 break
+            else:
+                if i := i.replace('g', 'q'):
+                    if i in name or name in i:
+                        print(i)
+                        p1 += 1
+                        present.append("P")
+                        yes = True
+                        break
         if not yes:
             present.append("A")
 
+    print(f"Present Students: {p1}")
     return present
 
 
@@ -66,12 +77,17 @@ def photosCallBack():
     for i in convertImages:
         for j in i:
             if j:
-                Attandees.append(''.join(k.replace('-', '').lower() for k in j if not k.isdigit()))
+                Attandees.append(''.join(
+                    k.replace('-', '').replace('.', ' ').replace('#', '').lower() for k in j if not k.isdigit()))
     print(Attandees)
+    Attandees = [i for j, i in enumerate(Attandees) if i not in Attandees[:j]]
+    print(Attandees)
+
+    print(f"Students in Screenshots: {len(Attandees)}")
     present = checkAttandance()
     data['Status'] = present
 
-    data.to_excel(desktop+'/Attendees.xlsx')
+    data.to_excel(desktop + '/Attendees.xlsx')
     print(data)
 
 
