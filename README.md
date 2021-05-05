@@ -3,7 +3,8 @@
 Don't judge the code, this is not the best way to write code. I was learning tkinter that is why GUI is bad.
 
 Here's the Mega link for Downloading exe file
-https://mega.nz/file/fwkSlYoS#YDzpb-gXS_qswL5H2o5ZJirei6oqu-dTpKI1oL2F2sw
+
+https://mega.nz/file/Go82VDQY#GsCFrPr6-1twJq48YuFvTH0ZNvD9PL2tChznBHsjLe8
 
 **How to USE:**
 
