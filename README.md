@@ -1,4 +1,4 @@
-# auto-team-attandance
+# auto-zoom-attandance
 
 Don't judge the code, this is not the best way to write code. I was learning tkinter that is why GUI is bad.
 
